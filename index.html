@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="de" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ustafix — Mängelmanagement App für die Baustelle | Baumängel digital erfassen</title>
-  <meta name="description" content="Baumängel per Spracheingabe erfassen, automatisch übersetzen (DE/TR/RU) und in Echtzeit dokumentieren. Die Baustellenapp für Bauleiter und Handwerker. Offline-fähig, DSGVO-konform.">
-  <meta name="keywords" content="Mängelmanagement Software, Baustellenapp, Mängeldokumentation, Baumängel App, digitale Baustelle, Baumanagement Software, Mängelliste digital, Baustellen Dokumentation, PlanRadar Alternative, Mängelerfassung App">
+  <meta name="description"
+    content="Baumängel per Spracheingabe erfassen, automatisch übersetzen (DE/TR/RU) und in Echtzeit dokumentieren. Die Baustellenapp für Bauleiter und Handwerker. Offline-fähig, DSGVO-konform.">
+  <meta name="keywords"
+    content="Mängelmanagement Software, Baustellenapp, Mängeldokumentation, Baumängel App, digitale Baustelle, Baumanagement Software, Mängelliste digital, Baustellen Dokumentation, PlanRadar Alternative, Mängelerfassung App">
   <meta name="robots" content="index, follow">
   <meta name="author" content="WAMOCON">
   <meta name="theme-color" content="#F97316">
   <link rel="canonical" href="https://ustafix.app">
   <!-- Open Graph -->
   <meta property="og:title" content="Ustafix — Mängelmanagement App für die Baustelle">
-  <meta property="og:description" content="31 Mängel pro Neubau. 33% ausländische Fachkräfte. Sprachbarrieren kosten Leben. Ustafix löst das: Voice-first Erfassung, automatische Übersetzung DE/TR/RU, Echtzeit-Sync.">
+  <meta property="og:description"
+    content="31 Mängel pro Neubau. 33% ausländische Fachkräfte. Sprachbarrieren kosten Leben. Ustafix löst das: Voice-first Erfassung, automatische Übersetzung DE/TR/RU, Echtzeit-Sync.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:site_name" content="Ustafix">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Ustafix — Baumängel digital erfassen">
-  <meta name="twitter:description" content="Die Mängelmanagement App mit Spracheingabe, Foto/Video-Dokumentation und automatischer Übersetzung für multilinguale Bauteams.">
+  <meta name="twitter:description"
+    content="Die Mängelmanagement App mit Spracheingabe, Foto/Video-Dokumentation und automatischer Übersetzung für multilinguale Bauteams.">
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
@@ -48,7 +53,8 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <style type="text/tailwindcss">
@@ -70,38 +76,94 @@
     body { font-family: var(--font-sans); background: var(--color-bg); color: var(--color-text-main); }
   </style>
 </head>
+
 <body class="overflow-x-hidden antialiased leading-relaxed">
 
   <svg class="hidden" xmlns="http://www.w3.org/2000/svg">
-    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
-    <symbol id="i-zap" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
-    <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></symbol>
-    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></symbol>
-    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></symbol>
-    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0114.08 0"/><path d="M1.42 9a16 16 0 0121.16 0"/><path d="M8.53 16.11a6 6 0 016.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></symbol>
-    <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></symbol>
-    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></symbol>
-    <symbol id="i-check" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
-    <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/></symbol>
-    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
-    <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></symbol>
-    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
-    <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+    </symbol>
+    <symbol id="i-zap" viewBox="0 0 24 24">
+      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+    </symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24">
+      <path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z" />
+      <path d="M19 10v2a7 7 0 01-14 0v-2" />
+      <line x1="12" y1="19" x2="12" y2="23" />
+      <line x1="8" y1="23" x2="16" y2="23" />
+    </symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24">
+      <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z" />
+      <circle cx="12" cy="13" r="4" />
+    </symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" />
+      <line x1="2" y1="12" x2="22" y2="12" />
+      <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+    </symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24">
+      <path d="M5 12.55a11 11 0 0114.08 0" />
+      <path d="M1.42 9a16 16 0 0121.16 0" />
+      <path d="M8.53 16.11a6 6 0 016.95 0" />
+      <line x1="12" y1="20" x2="12.01" y2="20" />
+    </symbol>
+    <symbol id="i-users" viewBox="0 0 24 24">
+      <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+      <circle cx="9" cy="7" r="4" />
+      <path d="M23 21v-2a4 4 0 00-3-3.87" />
+      <path d="M16 3.13a4 4 0 010 7.75" />
+    </symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24">
+      <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" />
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+      <polyline points="22 4 12 14.01 9 11.01" />
+    </symbol>
+    <symbol id="i-building" viewBox="0 0 24 24">
+      <rect x="4" y="2" width="16" height="20" rx="2" />
+      <path d="M9 22v-4h6v4" />
+    </symbol>
+    <symbol id="i-help" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" />
+      <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" />
+      <line x1="12" y1="17" x2="12.01" y2="17" />
+    </symbol>
+    <symbol id="i-message" viewBox="0 0 24 24">
+      <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+    </symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" />
+      <polyline points="12 6 12 12 16 14" />
+    </symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24">
+      <path
+        d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
+    </symbol>
   </svg>
 
   <div class="gradient-orbs" aria-hidden="true">
-    <div class="orb orb--1"></div><div class="orb orb--2"></div><div class="orb orb--3"></div>
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+    <div class="orb orb--3"></div>
   </div>
 
-  <div class="fixed top-0 left-0 right-0 z-[60] overflow-hidden" style="height:48px;background:#0a0a0c;border-bottom:1px solid rgba(249,115,22,.25);">
-    <div style="display:flex;align-items:center;height:100%;white-space:nowrap;animation:ticker-scroll 18s linear infinite;">
-<span class="ticker-item">USTAFIX &mdash; Digitale Mängeldokumentation</span><span class="ticker-item">USTAFIX &mdash; Digitale Mängeldokumentation</span><span class="ticker-item">USTAFIX &mdash; Digitale Mängeldokumentation</span><span class="ticker-item">USTAFIX &mdash; Digitale Mängeldokumentation</span><span class="ticker-item">USTAFIX &mdash; Digitale Mängeldokumentation</span><span class="ticker-item">USTAFIX &mdash; Digitale Mängeldokumentation</span>
+  <div class="fixed top-0 left-0 right-0 z-[60] overflow-hidden"
+    style="height:48px;background:#0a0a0c;border-bottom:1px solid rgba(249,115,22,.25);">
+    <div
+      style="display:flex;align-items:center;height:100%;white-space:nowrap;animation:ticker-scroll 18s linear infinite;">
+      <span class="ticker-item">USTAFIX &mdash; Digitale Mängeldokumentation</span><span class="ticker-item">USTAFIX
+        &mdash; Digitale Mängeldokumentation</span><span class="ticker-item">USTAFIX &mdash; Digitale
+        Mängeldokumentation</span><span class="ticker-item">USTAFIX &mdash; Digitale Mängeldokumentation</span><span
+        class="ticker-item">USTAFIX &mdash; Digitale Mängeldokumentation</span><span class="ticker-item">USTAFIX &mdash;
+        Digitale Mängeldokumentation</span>
     </div>
   </div>
 
   <nav class="fixed top-[48px] left-0 right-0 z-50 h-16 flex items-center transition-all duration-400" id="nav">
     <div class="w-full max-w-[1100px] mx-auto px-5 md:px-10 flex items-center justify-between">
-      <a href="#" class="hover:opacity-70 transition-opacity" style="font-size:1.8rem;font-weight:900;letter-spacing:-1px;color:#F97316;text-decoration:none;">USTAFIX</a>
+      <a href="#" class="hover:opacity-70 transition-opacity"
+        style="font-size:1.8rem;font-weight:900;letter-spacing:-1px;color:#F97316;text-decoration:none;">USTAFIX</a>
       <div class="hidden md:flex">
         <div class="nav-links-pill">
           <a href="#problem" class="nav-link" data-nav-section="problem">Problem</a>
@@ -112,11 +174,14 @@
           <a href="#faq" class="nav-link" data-nav-section="faq">FAQ</a>
         </div>
       </div>
-      <button class="nav-hamburger md:hidden" id="navHamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <button class="nav-hamburger md:hidden" id="navHamburger"
+        aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </nav>
   <div id="mobileMenu" aria-hidden="true">
-    <button style="position:absolute;top:18px;right:18px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.2rem;" onclick="closeMobileMenu()">&times;</button>
+    <button
+      style="position:absolute;top:18px;right:18px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:1.2rem;"
+      onclick="closeMobileMenu()">&times;</button>
     <div class="mm-brand">USTAFIX</div>
     <div class="mm-grid">
       <a href="#problem" class="mm-link" onclick="closeMobileMenu()">Problem</a>
@@ -130,18 +195,32 @@
 
   <section class="relative min-h-screen flex items-center justify-center overflow-hidden pb-[120px]" id="hero">
     <canvas id="heroParticles" class="absolute inset-0 z-[1]"></canvas>
-    <div class="absolute inset-0 z-0" style="background:radial-gradient(ellipse 70% 55% at 50% 40%,rgba(249,115,22,.09)0%,transparent 65%),radial-gradient(ellipse 50% 60% at 20% 80%,rgba(249,115,22,.05)0%,transparent 50%),radial-gradient(ellipse 45% 50% at 80% 25%,rgba(200,80,0,.07)0%,transparent 50%)"></div>
-    <div class="absolute inset-0 z-0 opacity-[.06]" style="background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 60% 55% at 50% 50%,black 0%,transparent 70%)"></div>
+    <div class="absolute inset-0 z-0"
+      style="background:radial-gradient(ellipse 70% 55% at 50% 40%,rgba(249,115,22,.09)0%,transparent 65%),radial-gradient(ellipse 50% 60% at 20% 80%,rgba(249,115,22,.05)0%,transparent 50%),radial-gradient(ellipse 45% 50% at 80% 25%,rgba(200,80,0,.07)0%,transparent 50%)">
+    </div>
+    <div class="absolute inset-0 z-0 opacity-[.06]"
+      style="background-image:linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 60% 55% at 50% 50%,black 0%,transparent 70%)">
+    </div>
     <div class="relative z-10 text-center max-w-[920px] px-5">
       <h1 class="reveal text-3xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tight mb-6">
         Baumängel<br><span class="gradient-text">digital beheben</span>
       </h1>
-      <p class="reveal text-lg md:text-xl max-w-[640px] mx-auto leading-relaxed" style="color:var(--color-muted);">31 Mängel pro Neubau. 33&nbsp;% ausländische Fachkräfte. Sprachbarrieren, die Leben kosten. Ustafix macht Schluss mit Zettelwirtschaft — mit Spracheingabe, automatischer Übersetzung und Echtzeit-Dokumentation.</p>
+      <p class="reveal text-lg md:text-xl max-w-[640px] mx-auto leading-relaxed" style="color:var(--color-muted);">31
+        Mängel pro Neubau. 33&nbsp;% ausländische Fachkräfte. Sprachbarrieren, die Leben kosten. Ustafix macht Schluss
+        mit Zettelwirtschaft — mit Spracheingabe, automatischer Übersetzung und Echtzeit-Dokumentation.</p>
       <div class="reveal mt-10">
-        <a href="mailto:info@wamocon.com?subject=Interesse%20an%20Ustafix" style="display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:#F97316;color:#fff;font-size:.95rem;font-weight:700;border-radius:12px;text-decoration:none;transition:all .25s ease;box-shadow:0 4px 24px rgba(249,115,22,.3);" onmouseover="this.style.background='#EA580C';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#F97316';this.style.transform='translateY(0)'">Demo anfragen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;"><path d="M5 12h14"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a href="mailto:info@wamocon.com?subject=Interesse%20an%20Ustafix"
+          style="display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:#F97316;color:#fff;font-size:.95rem;font-weight:700;border-radius:12px;text-decoration:none;transition:all .25s ease;box-shadow:0 4px 24px rgba(249,115,22,.3);"
+          onmouseover="this.style.background='#EA580C';this.style.transform='translateY(-2px)'"
+          onmouseout="this.style.background='#F97316';this.style.transform='translateY(0)'">Demo anfragen <svg
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;">
+            <path d="M5 12h14" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg></a>
       </div>
     </div>
-    <div class="absolute bottom-0 left-0 right-0 h-[120px] z-20" style="background:linear-gradient(to bottom, transparent, #0f1117);"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-[120px] z-20"
+      style="background:linear-gradient(to bottom, transparent, #0f1117);"></div>
   </section>
 
   <section class="relative section-dark" id="problem" style="padding:7rem 0 6rem;margin-top:-2px;">
@@ -149,20 +228,33 @@
       <h2 class="reveal text-4xl md:text-6xl font-black leading-[1.05] tracking-tight mb-6" style="color:#f0f0f2;">
         Baustellen scheitern an<br><span style="color:#F97316;">Kommunikation &amp; Dokumentation</span>
       </h2>
-      <p class="reveal text-lg max-w-[580px] leading-relaxed mb-16" style="color:#9a9aaa;">Durchschnittlich 31 Mängel pro Neubau. Jeder vierte kostet über 10.000&nbsp;€ Reparatur. Und auf jeder dritten Position steht ein ausländischer Arbeiter, der die Sicherheitsanweisung nicht versteht.</p>
+      <p class="reveal text-lg max-w-[580px] leading-relaxed mb-16" style="color:#9a9aaa;">Durchschnittlich 31 Mängel
+        pro Neubau. Jeder vierte kostet über 10.000&nbsp;€ Reparatur. Und auf jeder dritten Position steht ein
+        ausländischer Arbeiter, der die Sicherheitsanweisung nicht versteht.</p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
-        <div class="reveal text-center p-8 rounded-2xl" style="background:rgba(249,115,22,.07);border:1px solid rgba(249,115,22,.25);">
-          <span class="block text-4xl sm:text-5xl md:text-6xl font-black leading-none mb-3 tabular-nums tracking-tighter" style="color:#F97316;word-break:break-word;hyphens:auto;" data-target="31" data-suffix=" Mängel">0</span>
+        <div class="reveal text-center p-8 rounded-2xl"
+          style="background:rgba(249,115,22,.07);border:1px solid rgba(249,115,22,.25);">
+          <span
+            class="block text-4xl sm:text-5xl lg:text-6xl font-black leading-none mb-3 tabular-nums tracking-tighter"
+            style="color:#F97316;letter-spacing:-0.05em;" data-target="31" data-suffix=" Mängel">0</span>
           <span class="block text-lg font-semibold mb-1" style="color:#f0f0f2;">pro Neubau im Schnitt</span>
           <span class="block text-xs" style="color:#7a7a88;">Quelle: BSB / IFB-Studie 2024</span>
         </div>
-        <div class="reveal text-center p-8 rounded-2xl" style="background:rgba(249,115,22,.07);border:1px solid rgba(249,115,22,.25);">
-          <span class="block text-4xl sm:text-5xl md:text-6xl font-black leading-none mb-3 tabular-nums tracking-tighter" style="color:#F97316;word-break:break-word;hyphens:auto;" data-target="34" data-suffix="%">0</span>
+        <div class="reveal text-center p-8 rounded-2xl"
+          style="background:rgba(249,115,22,.07);border:1px solid rgba(249,115,22,.25);">
+          <span
+            class="block text-4xl sm:text-5xl lg:text-6xl font-black leading-none mb-3 tabular-nums tracking-tighter"
+            style="color:#F97316;letter-spacing:-0.05em;" data-target="34" data-suffix="%">0</span>
           <span class="block text-lg font-semibold mb-1" style="color:#f0f0f2;">ausländische Baufachkräfte</span>
-          <span class="block text-xs" style="color:#7a7a88;">Quelle: Hoch-/Tiefbau 2025, mediendienst-integration.de</span>
+          <span class="block text-xs" style="color:#7a7a88;">Quelle: Hoch-/Tiefbau 2025,
+            mediendienst-integration.de</span>
         </div>
-        <div class="reveal text-center p-8 rounded-2xl" style="background:rgba(249,115,22,.07);border:1px solid rgba(249,115,22,.25);">
-          <span class="block text-4xl sm:text-5xl md:text-6xl font-black leading-none mb-3 tabular-nums tracking-tighter" style="color:#F97316;word-break:break-word;hyphens:auto;" data-target="100" data-separator="." data-suffix=" Verl.">0</span>
+        <div class="reveal text-center p-8 rounded-2xl"
+          style="background:rgba(249,115,22,.07);border:1px solid rgba(249,115,22,.25);">
+          <span
+            class="block text-4xl sm:text-5xl lg:text-6xl font-black leading-none mb-3 tabular-nums tracking-tighter"
+            style="color:#F97316;letter-spacing:-0.05em;" data-target="100" data-separator="."
+            data-suffix=" Verl.">0</span>
           <span class="block text-lg font-semibold mb-1" style="color:#f0f0f2;">verletzte Bauarbeiter/Jahr</span>
           <span class="block text-xs" style="color:#7a7a88;">Quelle: DGUV / BG BAU 2022</span>
         </div>
@@ -171,35 +263,48 @@
   </section>
 
   <div style="background:#050508;padding:5rem 1rem;text-align:center;position:relative;overflow:hidden;">
-    <div style="width:2px;height:90px;background:linear-gradient(to bottom,transparent,#F97316);margin:0 auto 2.5rem;"></div>
+    <div style="width:2px;height:90px;background:linear-gradient(to bottom,transparent,#F97316);margin:0 auto 2.5rem;">
+    </div>
     <h2 class="reveal text-3xl md:text-5xl font-black" style="color:#f0f0f2;">Ustafix&nbsp;ändert das</h2>
-    <p class="reveal text-base mt-4 max-w-[460px] mx-auto leading-relaxed" style="color:#9a9aaa;">Drei Probleme. Eine App. Gebaut für multilinguale Bauteams in Deutschland.</p>
-    <div style="width:2px;height:90px;background:linear-gradient(to bottom,#F97316,transparent);margin:2.5rem auto 0;"></div>
+    <p class="reveal text-base mt-4 max-w-[460px] mx-auto leading-relaxed" style="color:#9a9aaa;">Drei Probleme. Eine
+      App. Gebaut für multilinguale Bauteams in Deutschland.</p>
+    <div style="width:2px;height:90px;background:linear-gradient(to bottom,#F97316,transparent);margin:2.5rem auto 0;">
+    </div>
   </div>
 
   <section class="relative section-dark" style="padding:5rem 0 7rem;background:#050508;">
     <div class="max-w-[1100px] mx-auto px-5 md:px-10">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
-        <div class="reveal p-7 rounded-2xl" style="background:rgba(249,115,22,.05);border:1px solid rgba(249,115,22,.22);display:flex;flex-direction:column;">
+        <div class="reveal p-7 rounded-2xl"
+          style="background:rgba(249,115,22,.05);border:1px solid rgba(249,115,22,.22);display:flex;flex-direction:column;">
           <span class="block text-xs font-bold tracking-widest uppercase mb-4" style="color:#FB923C;">Erfassung</span>
           <h3 class="text-xl font-bold tracking-tight mb-3" style="color:#f0f0f2;">Sprache statt Tippen</h3>
-          <p class="text-sm leading-relaxed mb-6" style="color:#7a7a88;">33,7&nbsp;% der Hoch- und Tiefbau-Beschäftigten haben keinen deutschen Pass. Ustafix lässt sie Mängel in ihrer Muttersprache einsprechen — KI transkribiert und übersetzt automatisch.</p>
+          <p class="text-sm leading-relaxed mb-6" style="color:#7a7a88;">33,7&nbsp;% der Hoch- und Tiefbau-Beschäftigten
+            haben keinen deutschen Pass. Ustafix lässt sie Mängel in ihrer Muttersprache einsprechen — KI transkribiert
+            und übersetzt automatisch.</p>
           <div style="margin-top:auto;border-top:1px solid rgba(249,115,22,.18);padding-top:1rem;">
             <span class="text-sm font-bold" style="color:#FB923C;">&#10003;&ensp;Ustafix macht es einfach.</span>
           </div>
         </div>
-        <div class="reveal p-7 rounded-2xl" style="background:rgba(249,115,22,.05);border:1px solid rgba(249,115,22,.22);display:flex;flex-direction:column;">
+        <div class="reveal p-7 rounded-2xl"
+          style="background:rgba(249,115,22,.05);border:1px solid rgba(249,115,22,.22);display:flex;flex-direction:column;">
           <span class="block text-xs font-bold tracking-widest uppercase mb-4" style="color:#FB923C;">Sicherheit</span>
           <h3 class="text-xl font-bold tracking-tight mb-3" style="color:#f0f0f2;">Sprachbarrieren abbauen</h3>
-          <p class="text-sm leading-relaxed mb-6" style="color:#7a7a88;">74 Todesfälle und fast 100.000 Verletzte auf Baustellen in 2022 (BG&nbsp;BAU). Migranten mit geringen Deutschkenntnissen sind laut DGUV stärker gefährdet. Ustafix übersetzt Anweisungen in DE/TR/RU in Echtzeit.</p>
+          <p class="text-sm leading-relaxed mb-6" style="color:#7a7a88;">74 Todesfälle und fast 100.000 Verletzte auf
+            Baustellen in 2022 (BG&nbsp;BAU). Migranten mit geringen Deutschkenntnissen sind laut DGUV stärker
+            gefährdet. Ustafix übersetzt Anweisungen in DE/TR/RU in Echtzeit.</p>
           <div style="margin-top:auto;border-top:1px solid rgba(249,115,22,.18);padding-top:1rem;">
             <span class="text-sm font-bold" style="color:#FB923C;">&#10003;&ensp;Ustafix rettet Leben.</span>
           </div>
         </div>
-        <div class="reveal p-7 rounded-2xl" style="background:rgba(249,115,22,.05);border:1px solid rgba(249,115,22,.22);display:flex;flex-direction:column;">
-          <span class="block text-xs font-bold tracking-widest uppercase mb-4" style="color:#FB923C;">Dokumentation</span>
+        <div class="reveal p-7 rounded-2xl"
+          style="background:rgba(249,115,22,.05);border:1px solid rgba(249,115,22,.22);display:flex;flex-direction:column;">
+          <span class="block text-xs font-bold tracking-widest uppercase mb-4"
+            style="color:#FB923C;">Dokumentation</span>
           <h3 class="text-xl font-bold tracking-tight mb-3" style="color:#f0f0f2;">Rechtssichere Nachweise</h3>
-          <p class="text-sm leading-relaxed mb-6" style="color:#7a7a88;">25&nbsp;% der Mängelreparaturen kosten über 10.000&nbsp;€ (BSB 2022). Wer spät entdeckt, zahlt mehr. Ustafix dokumentiert jeden Mangel mit Foto, Audio, Status und Zeitstempel — DSGVO-konform.</p>
+          <p class="text-sm leading-relaxed mb-6" style="color:#7a7a88;">25&nbsp;% der Mängelreparaturen kosten über
+            10.000&nbsp;€ (BSB 2022). Wer spät entdeckt, zahlt mehr. Ustafix dokumentiert jeden Mangel mit Foto, Audio,
+            Status und Zeitstempel — DSGVO-konform.</p>
           <div style="margin-top:auto;border-top:1px solid rgba(249,115,22,.18);padding-top:1rem;">
             <span class="text-sm font-bold" style="color:#FB923C;">&#10003;&ensp;Ustafix sichert Beweise.</span>
           </div>
@@ -211,241 +316,408 @@
   <section class="py-24 md:py-36 section-dark" id="warum" style="background:#050508;">
     <div class="max-w-[1100px] mx-auto px-5 md:px-10">
       <div class="text-center mb-20">
-        <h2 class="reveal text-3xl md:text-5xl font-bold leading-[1.1] tracking-tight mb-5" style="color:#f0f0f2;">Sechs Gründe.<br>Eine App.</h2>
-        <p class="reveal text-lg max-w-[620px] mx-auto leading-relaxed" style="color:#9999a1;">Echte Alleinstellungsmerkmale, die den Unterschied auf der Baustelle machen.</p>
+        <h2 class="reveal text-3xl md:text-5xl font-bold leading-[1.1] tracking-tight mb-5" style="color:#f0f0f2;">Sechs
+          Gründe.<br>Eine App.</h2>
+        <p class="reveal text-lg max-w-[620px] mx-auto leading-relaxed" style="color:#9999a1;">Echte
+          Alleinstellungsmerkmale, die den Unterschied auf der Baustelle machen.</p>
       </div>
       <div class="rm" id="roadmapTimeline">
         <div class="rm__line" id="rmLine">
           <svg preserveAspectRatio="none" id="rmSvg">
-            <defs><linearGradient id="rmGradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#F97316"/><stop offset="100%" stop-color="#FBBF24"/></linearGradient></defs>
-            <path class="rm__line-bg" id="rmPathBg"/><path class="rm__line-progress" id="rmPathFill"/>
+            <defs>
+              <linearGradient id="rmGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#F97316" />
+                <stop offset="100%" stop-color="#FBBF24" />
+              </linearGradient>
+            </defs>
+            <path class="rm__line-bg" id="rmPathBg" />
+            <path class="rm__line-progress" id="rmPathFill" />
           </svg>
           <div class="rm__line-glow" id="rmGlow"></div>
         </div>
 
         <div class="rm__row" data-rm-progress="0.06">
-          <div class="rm__cell"><div class="rm__card rm__card--l">
-            <span class="rm__label">Erfassung</span><h3 class="rm__title">Sprache statt Tippen</h3>
-            <p class="rm__desc">Mangel einsprechen — KI transkribiert in Sekunden via Groq Whisper Large v3 Turbo. Kein Tippen auf dem Gerüst, kein Stift auf nassem Papier. In jeder Sprache.</p><div class="rm__tags"><span class="rm__tag">Voice-first</span><span class="rm__tag">KI-Transkription</span><span class="rm__tag">Groq Whisper</span></div>
-          </div></div>
-          <div class="rm__center"><div class="rm__branch rm__branch--l"></div><div class="rm__dot"></div></div>
+          <div class="rm__cell">
+            <div class="rm__card rm__card--l">
+              <span class="rm__label">Erfassung</span>
+              <h3 class="rm__title">Sprache statt Tippen</h3>
+              <p class="rm__desc">Mangel einsprechen — KI transkribiert in Sekunden via Groq Whisper Large v3 Turbo.
+                Kein Tippen auf dem Gerüst, kein Stift auf nassem Papier. In jeder Sprache.</p>
+              <div class="rm__tags"><span class="rm__tag">Voice-first</span><span
+                  class="rm__tag">KI-Transkription</span><span class="rm__tag">Groq Whisper</span></div>
+            </div>
+          </div>
+          <div class="rm__center">
+            <div class="rm__branch rm__branch--l"></div>
+            <div class="rm__dot"></div>
+          </div>
           <div class="rm__cell rm__cell--hide"></div>
         </div>
 
         <div class="rm__row" data-rm-progress="0.22">
           <div class="rm__cell rm__cell--hide"></div>
-          <div class="rm__center"><div class="rm__branch rm__branch--r"></div><div class="rm__dot"></div></div>
-          <div class="rm__cell"><div class="rm__card rm__card--r">
-            <span class="rm__label">Sprache</span><h3 class="rm__title">Automatisch übersetzt</h3>
-            <p class="rm__desc">33,7 % der Baufachkräfte im Hoch-/Tiefbau haben keinen deutschen Pass (2025). Ustafix übersetzt jede Eingabe via DeepL sofort in DE, TR und RU — die drei wichtigsten Sprachen auf deutschen Baustellen.</p><div class="rm__tags"><span class="rm__tag">DE/TR/RU</span><span class="rm__tag">DeepL API</span><span class="rm__tag">Echtzeit</span></div>
-          </div></div>
+          <div class="rm__center">
+            <div class="rm__branch rm__branch--r"></div>
+            <div class="rm__dot"></div>
+          </div>
+          <div class="rm__cell">
+            <div class="rm__card rm__card--r">
+              <span class="rm__label">Sprache</span>
+              <h3 class="rm__title">Automatisch übersetzt</h3>
+              <p class="rm__desc">33,7 % der Baufachkräfte im Hoch-/Tiefbau haben keinen deutschen Pass (2025). Ustafix
+                übersetzt jede Eingabe via DeepL sofort in DE, TR und RU — die drei wichtigsten Sprachen auf deutschen
+                Baustellen.</p>
+              <div class="rm__tags"><span class="rm__tag">DE/TR/RU</span><span class="rm__tag">DeepL API</span><span
+                  class="rm__tag">Echtzeit</span></div>
+            </div>
+          </div>
         </div>
 
         <div class="rm__row" data-rm-progress="0.38">
-          <div class="rm__cell"><div class="rm__card rm__card--l">
-            <span class="rm__label">Dokumentation</span><h3 class="rm__title">Foto & Video Beweis</h3>
-            <p class="rm__desc">25 % der Mängelreparaturen kosten über 10.000 € (BSB). Früh dokumentieren spart Geld. Ustafix: Kamera öffnen, Mangel fotografieren, Beweis gesichert. Bis zu 50 MB Video.</p><div class="rm__tags"><span class="rm__tag">Kamera-Zugriff</span><span class="rm__tag">Komprimierung</span><span class="rm__tag">Beweissicherung</span></div>
-          </div></div>
-          <div class="rm__center"><div class="rm__branch rm__branch--l"></div><div class="rm__dot"></div></div>
+          <div class="rm__cell">
+            <div class="rm__card rm__card--l">
+              <span class="rm__label">Dokumentation</span>
+              <h3 class="rm__title">Foto & Video Beweis</h3>
+              <p class="rm__desc">25 % der Mängelreparaturen kosten über 10.000 € (BSB). Früh dokumentieren spart Geld.
+                Ustafix: Kamera öffnen, Mangel fotografieren, Beweis gesichert. Bis zu 50 MB Video.</p>
+              <div class="rm__tags"><span class="rm__tag">Kamera-Zugriff</span><span
+                  class="rm__tag">Komprimierung</span><span class="rm__tag">Beweissicherung</span></div>
+            </div>
+          </div>
+          <div class="rm__center">
+            <div class="rm__branch rm__branch--l"></div>
+            <div class="rm__dot"></div>
+          </div>
           <div class="rm__cell rm__cell--hide"></div>
         </div>
 
         <div class="rm__row" data-rm-progress="0.54">
           <div class="rm__cell rm__cell--hide"></div>
-          <div class="rm__center"><div class="rm__branch rm__branch--r"></div><div class="rm__dot"></div></div>
-          <div class="rm__cell"><div class="rm__card rm__card--r">
-            <span class="rm__label">Sync</span><h3 class="rm__title">Echtzeit auf allen Geräten</h3>
-            <p class="rm__desc">Alle Änderungen synchen live via Supabase Realtime. Bauleiter im Büro sieht sofort den neuen Mangel des Handwerkers auf dem Dach. Kein Abgleich, kein Reload.</p><div class="rm__tags"><span class="rm__tag">Supabase Realtime</span><span class="rm__tag">Live-Sync</span><span class="rm__tag">WebSocket</span></div>
-          </div></div>
+          <div class="rm__center">
+            <div class="rm__branch rm__branch--r"></div>
+            <div class="rm__dot"></div>
+          </div>
+          <div class="rm__cell">
+            <div class="rm__card rm__card--r">
+              <span class="rm__label">Sync</span>
+              <h3 class="rm__title">Echtzeit auf allen Geräten</h3>
+              <p class="rm__desc">Alle Änderungen synchen live via Supabase Realtime. Bauleiter im Büro sieht sofort den
+                neuen Mangel des Handwerkers auf dem Dach. Kein Abgleich, kein Reload.</p>
+              <div class="rm__tags"><span class="rm__tag">Supabase Realtime</span><span
+                  class="rm__tag">Live-Sync</span><span class="rm__tag">WebSocket</span></div>
+            </div>
+          </div>
         </div>
 
         <div class="rm__row" data-rm-progress="0.70">
-          <div class="rm__cell"><div class="rm__card rm__card--l">
-            <span class="rm__label">Rollen</span><h3 class="rm__title">Admin, Bauleiter, Handwerker</h3>
-            <p class="rm__desc">Klare Rollenstruktur: Admin verwaltet Projekte und Teams. Bauleiter (Manager) koordiniert und bewertet. Handwerker (Worker) erfasst Mängel und wechselt Status.</p><div class="rm__tags"><span class="rm__tag">RBAC</span><span class="rm__tag">Projekt-Teams</span><span class="rm__tag">Pull-Modell</span></div>
-          </div></div>
-          <div class="rm__center"><div class="rm__branch rm__branch--l"></div><div class="rm__dot"></div></div>
+          <div class="rm__cell">
+            <div class="rm__card rm__card--l">
+              <span class="rm__label">Rollen</span>
+              <h3 class="rm__title">Admin, Bauleiter, Handwerker</h3>
+              <p class="rm__desc">Klare Rollenstruktur: Admin verwaltet Projekte und Teams. Bauleiter (Manager)
+                koordiniert und bewertet. Handwerker (Worker) erfasst Mängel und wechselt Status.</p>
+              <div class="rm__tags"><span class="rm__tag">RBAC</span><span class="rm__tag">Projekt-Teams</span><span
+                  class="rm__tag">Pull-Modell</span></div>
+            </div>
+          </div>
+          <div class="rm__center">
+            <div class="rm__branch rm__branch--l"></div>
+            <div class="rm__dot"></div>
+          </div>
           <div class="rm__cell rm__cell--hide"></div>
         </div>
 
         <div class="rm__row" data-rm-progress="0.88">
           <div class="rm__cell rm__cell--hide"></div>
-          <div class="rm__center"><div class="rm__branch rm__branch--r"></div><div class="rm__dot"></div></div>
-          <div class="rm__cell"><div class="rm__card rm__card--r">
-            <span class="rm__label">Offline</span><h3 class="rm__title">Funktioniert ohne Netz</h3>
-            <p class="rm__desc">Im Keller, im Rohbau, auf dem Dach — Netz ist nicht garantiert. Ustafix ist eine PWA mit gecachter App Shell. Daten syncen automatisch, sobald Verbindung besteht.</p><div class="rm__tags"><span class="rm__tag">PWA</span><span class="rm__tag">Offline-Modus</span><span class="rm__tag">Service Worker</span></div>
-          </div></div>
+          <div class="rm__center">
+            <div class="rm__branch rm__branch--r"></div>
+            <div class="rm__dot"></div>
+          </div>
+          <div class="rm__cell">
+            <div class="rm__card rm__card--r">
+              <span class="rm__label">Offline</span>
+              <h3 class="rm__title">Funktioniert ohne Netz</h3>
+              <p class="rm__desc">Im Keller, im Rohbau, auf dem Dach — Netz ist nicht garantiert. Ustafix ist eine PWA
+                mit gecachter App Shell. Daten syncen automatisch, sobald Verbindung besteht.</p>
+              <div class="rm__tags"><span class="rm__tag">PWA</span><span class="rm__tag">Offline-Modus</span><span
+                  class="rm__tag">Service Worker</span></div>
+            </div>
+          </div>
         </div>
         <div class="rm__end">
           <div class="rm__end-marker" id="rmEndDot">
-            <div class="rm__end-ring"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <div class="rm__end-ring"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5"
+                viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg></div>
             <span class="rm__end-label">Und das ist erst der Anfang.</span>
           </div>
         </div>
       </div>
     </div>
   </section>
-<div class="divider-gradient" style="background:linear-gradient(to bottom, #0f1117, var(--color-bg));"></div>
+  <div class="divider-gradient" style="background:linear-gradient(to bottom, #0f1117, var(--color-bg));"></div>
   <section class="py-24 md:py-32" id="rollen" style="position:relative;overflow:hidden;">
-    <div style="position:absolute;top:-140px;left:-140px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(249,115,22,.07) 0%,transparent 68%);pointer-events:none;"></div>
+    <div
+      style="position:absolute;top:-140px;left:-140px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(249,115,22,.07) 0%,transparent 68%);pointer-events:none;">
+    </div>
     <div class="max-w-[1100px] mx-auto px-5 md:px-10">
       <div class="text-center mb-16">
-        <span class="reveal inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-5" style="color:#F97316;background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);">Für wen ist Ustafix?</span>
-        <h2 class="reveal text-3xl md:text-5xl font-bold leading-[1.1] tracking-tight mb-5">Zwei Perspektiven.<br>Eine App.</h2>
-        <p class="reveal text-lg max-w-[620px] mx-auto leading-relaxed" style="color:var(--color-muted);">Was sich mit Ustafix konkret verändert — für Bauleiter und Handwerker.</p>
+        <span class="reveal inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-5"
+          style="color:#F97316;background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);">Für wen ist
+          Ustafix?</span>
+        <h2 class="reveal text-3xl md:text-5xl font-bold leading-[1.1] tracking-tight mb-5">Zwei Perspektiven.<br>Eine
+          App.</h2>
+        <p class="reveal text-lg max-w-[620px] mx-auto leading-relaxed" style="color:var(--color-muted);">Was sich mit
+          Ustafix konkret verändert — für Bauleiter und Handwerker.</p>
       </div>
       <div class="grid grid-cols-1 gap-8">
         <!-- Bauleiter -->
-        <div class="reveal rounded-2xl overflow-hidden" style="border:1.5px solid rgba(249,115,22,.22);box-shadow:0 12px 56px rgba(249,115,22,.09);background:linear-gradient(165deg,rgba(249,115,22,.035) 0%,var(--color-surface) 50%);">
-          <div class="px-8 py-6 flex items-center gap-5" style="background:linear-gradient(135deg,rgba(249,115,22,.11),rgba(249,115,22,.04));border-bottom:1px solid rgba(249,115,22,.14);">
-            <div style="width:60px;height:60px;border-radius:16px;background:linear-gradient(135deg,rgba(249,115,22,.2),rgba(249,115,22,.08));border:1px solid rgba(249,115,22,.28);display:flex;align-items:center;justify-content:center;">
-              <svg class="icon w-7 h-7" style="color:#F97316;"><use href="#i-building"/></svg>
+        <div class="reveal rounded-2xl overflow-hidden"
+          style="border:1.5px solid rgba(249,115,22,.22);box-shadow:0 12px 56px rgba(249,115,22,.09);background:linear-gradient(165deg,rgba(249,115,22,.035) 0%,var(--color-surface) 50%);">
+          <div class="px-8 py-6 flex items-center gap-5"
+            style="background:linear-gradient(135deg,rgba(249,115,22,.11),rgba(249,115,22,.04));border-bottom:1px solid rgba(249,115,22,.14);">
+            <div
+              style="width:60px;height:60px;border-radius:16px;background:linear-gradient(135deg,rgba(249,115,22,.2),rgba(249,115,22,.08));border:1px solid rgba(249,115,22,.28);display:flex;align-items:center;justify-content:center;">
+              <svg class="icon w-7 h-7" style="color:#F97316;">
+                <use href="#i-building" />
+              </svg>
             </div>
             <div>
-              <div style="font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#F97316;margin-bottom:3px;">Projektleitung</div>
+              <div
+                style="font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#F97316;margin-bottom:3px;">
+                Projektleitung</div>
               <h3 class="text-2xl font-bold">Für Bauleiter</h3>
             </div>
           </div>
           <div class="grid grid-cols-2" style="border-bottom:1px solid rgba(249,115,22,.08);">
-            <div style="padding:10px 28px;font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#b06030;background:rgba(249,115,22,.03);">Vorher</div>
-            <div style="padding:10px 28px;font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#F97316;background:rgba(249,115,22,.04);border-left:2px solid rgba(249,115,22,.12);">Mit Ustafix</div>
+            <div
+              style="padding:10px 28px;font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#b06030;background:rgba(249,115,22,.03);">
+              Vorher</div>
+            <div
+              style="padding:10px 28px;font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#F97316;background:rgba(249,115,22,.04);border-left:2px solid rgba(249,115,22,.12);">
+              Mit Ustafix</div>
           </div>
 
-            <div class="grid grid-cols-2" style="border-top:1px solid rgba(249,115,22,.08);">
-              <div class="px-8 py-5" style="background:rgba(249,115,22,.02);">
-                <div class="flex items-start gap-3">
-                  <svg width="15" height="15" viewBox="0 0 16 16" class="shrink-0 mt-0.5" style="color:#cc6644;"><line x1="3" y1="3" x2="13" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><line x1="13" y1="3" x2="3" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-                  <span class="text-sm leading-relaxed" style="color:#999;text-decoration:line-through;text-decoration-color:rgba(249,115,22,.3);">Mängel in Excel-Listen oder auf Papier dokumentiert</span>
-                </div>
-              </div>
-              <div class="px-8 py-5" style="background:linear-gradient(135deg,rgba(249,115,22,.055),rgba(249,115,22,.015));border-left:2px solid rgba(249,115,22,.22);">
-                <div class="flex items-start gap-3">
-                  <svg class="icon w-5 h-5 shrink-0 mt-0.5" style="color:#F97316;"><use href="#i-check"/></svg>
-                  <span class="text-sm leading-relaxed"><strong>Digitales Dashboard</strong> — Alle Mängel, Status und Fotos auf einen Blick</span>
-                </div>
+          <div class="grid grid-cols-2" style="border-top:1px solid rgba(249,115,22,.08);">
+            <div class="px-8 py-5" style="background:rgba(249,115,22,.02);">
+              <div class="flex items-start gap-3">
+                <svg width="15" height="15" viewBox="0 0 16 16" class="shrink-0 mt-0.5" style="color:#cc6644;">
+                  <line x1="3" y1="3" x2="13" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+                  <line x1="13" y1="3" x2="3" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+                </svg>
+                <span class="text-sm leading-relaxed"
+                  style="color:#999;text-decoration:line-through;text-decoration-color:rgba(249,115,22,.3);">Mängel in
+                  Excel-Listen oder auf Papier dokumentiert</span>
               </div>
             </div>
+            <div class="px-8 py-5"
+              style="background:linear-gradient(135deg,rgba(249,115,22,.055),rgba(249,115,22,.015));border-left:2px solid rgba(249,115,22,.22);">
+              <div class="flex items-start gap-3">
+                <svg class="icon w-5 h-5 shrink-0 mt-0.5" style="color:#F97316;">
+                  <use href="#i-check" />
+                </svg>
+                <span class="text-sm leading-relaxed"><strong>Digitales Dashboard</strong> — Alle Mängel, Status und
+                  Fotos auf einen Blick</span>
+              </div>
+            </div>
+          </div>
 
-            <div class="grid grid-cols-2" style="border-top:1px solid rgba(249,115,22,.08);">
-              <div class="px-8 py-5" style="background:rgba(249,115,22,.02);">
-                <div class="flex items-start gap-3">
-                  <svg width="15" height="15" viewBox="0 0 16 16" class="shrink-0 mt-0.5" style="color:#cc6644;"><line x1="3" y1="3" x2="13" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><line x1="13" y1="3" x2="3" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-                  <span class="text-sm leading-relaxed" style="color:#999;text-decoration:line-through;text-decoration-color:rgba(249,115,22,.3);">Telefonische Rückfragen mit Handwerkern, Sprachbarrieren</span>
-                </div>
-              </div>
-              <div class="px-8 py-5" style="background:linear-gradient(135deg,rgba(249,115,22,.055),rgba(249,115,22,.015));border-left:2px solid rgba(249,115,22,.22);">
-                <div class="flex items-start gap-3">
-                  <svg class="icon w-5 h-5 shrink-0 mt-0.5" style="color:#F97316;"><use href="#i-check"/></svg>
-                  <span class="text-sm leading-relaxed"><strong>Mehrsprachige App</strong> — Automatische Übersetzung in DE/TR/RU</span>
-                </div>
+          <div class="grid grid-cols-2" style="border-top:1px solid rgba(249,115,22,.08);">
+            <div class="px-8 py-5" style="background:rgba(249,115,22,.02);">
+              <div class="flex items-start gap-3">
+                <svg width="15" height="15" viewBox="0 0 16 16" class="shrink-0 mt-0.5" style="color:#cc6644;">
+                  <line x1="3" y1="3" x2="13" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+                  <line x1="13" y1="3" x2="3" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+                </svg>
+                <span class="text-sm leading-relaxed"
+                  style="color:#999;text-decoration:line-through;text-decoration-color:rgba(249,115,22,.3);">Telefonische
+                  Rückfragen mit Handwerkern, Sprachbarrieren</span>
               </div>
             </div>
+            <div class="px-8 py-5"
+              style="background:linear-gradient(135deg,rgba(249,115,22,.055),rgba(249,115,22,.015));border-left:2px solid rgba(249,115,22,.22);">
+              <div class="flex items-start gap-3">
+                <svg class="icon w-5 h-5 shrink-0 mt-0.5" style="color:#F97316;">
+                  <use href="#i-check" />
+                </svg>
+                <span class="text-sm leading-relaxed"><strong>Mehrsprachige App</strong> — Automatische Übersetzung in
+                  DE/TR/RU</span>
+              </div>
+            </div>
+          </div>
 
-            <div class="grid grid-cols-2" style="border-top:1px solid rgba(249,115,22,.08);">
-              <div class="px-8 py-5" style="background:rgba(249,115,22,.02);">
-                <div class="flex items-start gap-3">
-                  <svg width="15" height="15" viewBox="0 0 16 16" class="shrink-0 mt-0.5" style="color:#cc6644;"><line x1="3" y1="3" x2="13" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><line x1="13" y1="3" x2="3" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-                  <span class="text-sm leading-relaxed" style="color:#999;text-decoration:line-through;text-decoration-color:rgba(249,115,22,.3);">Keine Nachvollziehbarkeit, fehlende Beweisfotos</span>
-                </div>
-              </div>
-              <div class="px-8 py-5" style="background:linear-gradient(135deg,rgba(249,115,22,.055),rgba(249,115,22,.015));border-left:2px solid rgba(249,115,22,.22);">
-                <div class="flex items-start gap-3">
-                  <svg class="icon w-5 h-5 shrink-0 mt-0.5" style="color:#F97316;"><use href="#i-check"/></svg>
-                  <span class="text-sm leading-relaxed"><strong>Lückenlose Dokumentation</strong> — Foto, Video, Audio mit Zeitstempel</span>
-                </div>
+          <div class="grid grid-cols-2" style="border-top:1px solid rgba(249,115,22,.08);">
+            <div class="px-8 py-5" style="background:rgba(249,115,22,.02);">
+              <div class="flex items-start gap-3">
+                <svg width="15" height="15" viewBox="0 0 16 16" class="shrink-0 mt-0.5" style="color:#cc6644;">
+                  <line x1="3" y1="3" x2="13" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+                  <line x1="13" y1="3" x2="3" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+                </svg>
+                <span class="text-sm leading-relaxed"
+                  style="color:#999;text-decoration:line-through;text-decoration-color:rgba(249,115,22,.3);">Keine
+                  Nachvollziehbarkeit, fehlende Beweisfotos</span>
               </div>
             </div>
+            <div class="px-8 py-5"
+              style="background:linear-gradient(135deg,rgba(249,115,22,.055),rgba(249,115,22,.015));border-left:2px solid rgba(249,115,22,.22);">
+              <div class="flex items-start gap-3">
+                <svg class="icon w-5 h-5 shrink-0 mt-0.5" style="color:#F97316;">
+                  <use href="#i-check" />
+                </svg>
+                <span class="text-sm leading-relaxed"><strong>Lückenlose Dokumentation</strong> — Foto, Video, Audio mit
+                  Zeitstempel</span>
+              </div>
+            </div>
+          </div>
 
-            <div class="grid grid-cols-2" style="border-top:1px solid rgba(249,115,22,.08);">
-              <div class="px-8 py-5" style="background:rgba(249,115,22,.02);">
-                <div class="flex items-start gap-3">
-                  <svg width="15" height="15" viewBox="0 0 16 16" class="shrink-0 mt-0.5" style="color:#cc6644;"><line x1="3" y1="3" x2="13" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><line x1="13" y1="3" x2="3" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-                  <span class="text-sm leading-relaxed" style="color:#999;text-decoration:line-through;text-decoration-color:rgba(249,115,22,.3);">Statusupdates per WhatsApp oder Telefon</span>
-                </div>
-              </div>
-              <div class="px-8 py-5" style="background:linear-gradient(135deg,rgba(249,115,22,.055),rgba(249,115,22,.015));border-left:2px solid rgba(249,115,22,.22);">
-                <div class="flex items-start gap-3">
-                  <svg class="icon w-5 h-5 shrink-0 mt-0.5" style="color:#F97316;"><use href="#i-check"/></svg>
-                  <span class="text-sm leading-relaxed"><strong>Echtzeit-Sync</strong> — Alle Änderungen sofort auf allen Geräten</span>
-                </div>
+          <div class="grid grid-cols-2" style="border-top:1px solid rgba(249,115,22,.08);">
+            <div class="px-8 py-5" style="background:rgba(249,115,22,.02);">
+              <div class="flex items-start gap-3">
+                <svg width="15" height="15" viewBox="0 0 16 16" class="shrink-0 mt-0.5" style="color:#cc6644;">
+                  <line x1="3" y1="3" x2="13" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+                  <line x1="13" y1="3" x2="3" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+                </svg>
+                <span class="text-sm leading-relaxed"
+                  style="color:#999;text-decoration:line-through;text-decoration-color:rgba(249,115,22,.3);">Statusupdates
+                  per WhatsApp oder Telefon</span>
               </div>
             </div>
+            <div class="px-8 py-5"
+              style="background:linear-gradient(135deg,rgba(249,115,22,.055),rgba(249,115,22,.015));border-left:2px solid rgba(249,115,22,.22);">
+              <div class="flex items-start gap-3">
+                <svg class="icon w-5 h-5 shrink-0 mt-0.5" style="color:#F97316;">
+                  <use href="#i-check" />
+                </svg>
+                <span class="text-sm leading-relaxed"><strong>Echtzeit-Sync</strong> — Alle Änderungen sofort auf allen
+                  Geräten</span>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Handwerker -->
-        <div class="reveal rounded-2xl overflow-hidden" style="border:1.5px solid rgba(56,189,248,.22);box-shadow:0 12px 56px rgba(56,189,248,.09);background:linear-gradient(165deg,rgba(56,189,248,.035) 0%,var(--color-surface) 50%);">
-          <div class="px-8 py-6 flex items-center gap-5" style="background:linear-gradient(135deg,rgba(56,189,248,.11),rgba(99,210,255,.04));border-bottom:1px solid rgba(56,189,248,.14);">
-            <div style="width:60px;height:60px;border-radius:16px;background:linear-gradient(135deg,rgba(56,189,248,.2),rgba(99,210,255,.08));border:1px solid rgba(56,189,248,.28);display:flex;align-items:center;justify-content:center;">
-              <svg class="icon w-7 h-7" style="color:#38bdf8;"><use href="#i-tool"/></svg>
+        <div class="reveal rounded-2xl overflow-hidden"
+          style="border:1.5px solid rgba(56,189,248,.22);box-shadow:0 12px 56px rgba(56,189,248,.09);background:linear-gradient(165deg,rgba(56,189,248,.035) 0%,var(--color-surface) 50%);">
+          <div class="px-8 py-6 flex items-center gap-5"
+            style="background:linear-gradient(135deg,rgba(56,189,248,.11),rgba(99,210,255,.04));border-bottom:1px solid rgba(56,189,248,.14);">
+            <div
+              style="width:60px;height:60px;border-radius:16px;background:linear-gradient(135deg,rgba(56,189,248,.2),rgba(99,210,255,.08));border:1px solid rgba(56,189,248,.28);display:flex;align-items:center;justify-content:center;">
+              <svg class="icon w-7 h-7" style="color:#38bdf8;">
+                <use href="#i-tool" />
+              </svg>
             </div>
             <div>
-              <div style="font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#38bdf8;margin-bottom:3px;">Ausführung</div>
+              <div
+                style="font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#38bdf8;margin-bottom:3px;">
+                Ausführung</div>
               <h3 class="text-2xl font-bold">Für Handwerker</h3>
             </div>
           </div>
           <div class="grid grid-cols-2" style="border-bottom:1px solid rgba(56,189,248,.08);">
-            <div style="padding:10px 28px;font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4a8a9a;background:rgba(56,189,248,.03);">Vorher</div>
-            <div style="padding:10px 28px;font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#38bdf8;background:rgba(56,189,248,.05);border-left:2px solid rgba(56,189,248,.14);">Mit Ustafix</div>
+            <div
+              style="padding:10px 28px;font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#4a8a9a;background:rgba(56,189,248,.03);">
+              Vorher</div>
+            <div
+              style="padding:10px 28px;font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#38bdf8;background:rgba(56,189,248,.05);border-left:2px solid rgba(56,189,248,.14);">
+              Mit Ustafix</div>
           </div>
 
-            <div class="grid grid-cols-2" style="border-top:1px solid rgba(56,189,248,.08);">
-              <div class="px-8 py-5" style="background:rgba(56,189,248,.02);">
-                <div class="flex items-start gap-3">
-                  <svg width="15" height="15" viewBox="0 0 16 16" class="shrink-0 mt-0.5" style="color:#cc6644;"><line x1="3" y1="3" x2="13" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><line x1="13" y1="3" x2="3" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-                  <span class="text-sm leading-relaxed" style="color:#999;text-decoration:line-through;text-decoration-color:rgba(56,189,248,.3);">Anweisungen auf Deutsch — nicht immer verstanden</span>
-                </div>
-              </div>
-              <div class="px-8 py-5" style="background:linear-gradient(135deg,rgba(56,189,248,.055),rgba(56,189,248,.015));border-left:2px solid rgba(56,189,248,.22);">
-                <div class="flex items-start gap-3">
-                  <svg class="icon w-5 h-5 shrink-0 mt-0.5" style="color:#38bdf8;"><use href="#i-check"/></svg>
-                  <span class="text-sm leading-relaxed"><strong>Muttersprachlich</strong> — Anweisungen und Mängel automatisch in TR/RU übersetzt</span>
-                </div>
+          <div class="grid grid-cols-2" style="border-top:1px solid rgba(56,189,248,.08);">
+            <div class="px-8 py-5" style="background:rgba(56,189,248,.02);">
+              <div class="flex items-start gap-3">
+                <svg width="15" height="15" viewBox="0 0 16 16" class="shrink-0 mt-0.5" style="color:#cc6644;">
+                  <line x1="3" y1="3" x2="13" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+                  <line x1="13" y1="3" x2="3" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+                </svg>
+                <span class="text-sm leading-relaxed"
+                  style="color:#999;text-decoration:line-through;text-decoration-color:rgba(56,189,248,.3);">Anweisungen
+                  auf Deutsch — nicht immer verstanden</span>
               </div>
             </div>
+            <div class="px-8 py-5"
+              style="background:linear-gradient(135deg,rgba(56,189,248,.055),rgba(56,189,248,.015));border-left:2px solid rgba(56,189,248,.22);">
+              <div class="flex items-start gap-3">
+                <svg class="icon w-5 h-5 shrink-0 mt-0.5" style="color:#38bdf8;">
+                  <use href="#i-check" />
+                </svg>
+                <span class="text-sm leading-relaxed"><strong>Muttersprachlich</strong> — Anweisungen und Mängel
+                  automatisch in TR/RU übersetzt</span>
+              </div>
+            </div>
+          </div>
 
-            <div class="grid grid-cols-2" style="border-top:1px solid rgba(56,189,248,.08);">
-              <div class="px-8 py-5" style="background:rgba(56,189,248,.02);">
-                <div class="flex items-start gap-3">
-                  <svg width="15" height="15" viewBox="0 0 16 16" class="shrink-0 mt-0.5" style="color:#cc6644;"><line x1="3" y1="3" x2="13" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><line x1="13" y1="3" x2="3" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-                  <span class="text-sm leading-relaxed" style="color:#999;text-decoration:line-through;text-decoration-color:rgba(56,189,248,.3);">Kein Überblick welche Mängel noch offen sind</span>
-                </div>
-              </div>
-              <div class="px-8 py-5" style="background:linear-gradient(135deg,rgba(56,189,248,.055),rgba(56,189,248,.015));border-left:2px solid rgba(56,189,248,.22);">
-                <div class="flex items-start gap-3">
-                  <svg class="icon w-5 h-5 shrink-0 mt-0.5" style="color:#38bdf8;"><use href="#i-check"/></svg>
-                  <span class="text-sm leading-relaxed"><strong>Statusanzeige</strong> — Offen, In Arbeit, Erledigt — ein Fingertipp</span>
-                </div>
+          <div class="grid grid-cols-2" style="border-top:1px solid rgba(56,189,248,.08);">
+            <div class="px-8 py-5" style="background:rgba(56,189,248,.02);">
+              <div class="flex items-start gap-3">
+                <svg width="15" height="15" viewBox="0 0 16 16" class="shrink-0 mt-0.5" style="color:#cc6644;">
+                  <line x1="3" y1="3" x2="13" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+                  <line x1="13" y1="3" x2="3" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+                </svg>
+                <span class="text-sm leading-relaxed"
+                  style="color:#999;text-decoration:line-through;text-decoration-color:rgba(56,189,248,.3);">Kein
+                  Überblick welche Mängel noch offen sind</span>
               </div>
             </div>
+            <div class="px-8 py-5"
+              style="background:linear-gradient(135deg,rgba(56,189,248,.055),rgba(56,189,248,.015));border-left:2px solid rgba(56,189,248,.22);">
+              <div class="flex items-start gap-3">
+                <svg class="icon w-5 h-5 shrink-0 mt-0.5" style="color:#38bdf8;">
+                  <use href="#i-check" />
+                </svg>
+                <span class="text-sm leading-relaxed"><strong>Statusanzeige</strong> — Offen, In Arbeit, Erledigt — ein
+                  Fingertipp</span>
+              </div>
+            </div>
+          </div>
 
-            <div class="grid grid-cols-2" style="border-top:1px solid rgba(56,189,248,.08);">
-              <div class="px-8 py-5" style="background:rgba(56,189,248,.02);">
-                <div class="flex items-start gap-3">
-                  <svg width="15" height="15" viewBox="0 0 16 16" class="shrink-0 mt-0.5" style="color:#cc6644;"><line x1="3" y1="3" x2="13" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><line x1="13" y1="3" x2="3" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-                  <span class="text-sm leading-relaxed" style="color:#999;text-decoration:line-through;text-decoration-color:rgba(56,189,248,.3);">Zettelwirtschaft und unleserliche Protokolle</span>
-                </div>
-              </div>
-              <div class="px-8 py-5" style="background:linear-gradient(135deg,rgba(56,189,248,.055),rgba(56,189,248,.015));border-left:2px solid rgba(56,189,248,.22);">
-                <div class="flex items-start gap-3">
-                  <svg class="icon w-5 h-5 shrink-0 mt-0.5" style="color:#38bdf8;"><use href="#i-check"/></svg>
-                  <span class="text-sm leading-relaxed"><strong>Digitale Checkliste</strong> — Alles auf dem Handy, offline verfügbar</span>
-                </div>
+          <div class="grid grid-cols-2" style="border-top:1px solid rgba(56,189,248,.08);">
+            <div class="px-8 py-5" style="background:rgba(56,189,248,.02);">
+              <div class="flex items-start gap-3">
+                <svg width="15" height="15" viewBox="0 0 16 16" class="shrink-0 mt-0.5" style="color:#cc6644;">
+                  <line x1="3" y1="3" x2="13" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+                  <line x1="13" y1="3" x2="3" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+                </svg>
+                <span class="text-sm leading-relaxed"
+                  style="color:#999;text-decoration:line-through;text-decoration-color:rgba(56,189,248,.3);">Zettelwirtschaft
+                  und unleserliche Protokolle</span>
               </div>
             </div>
+            <div class="px-8 py-5"
+              style="background:linear-gradient(135deg,rgba(56,189,248,.055),rgba(56,189,248,.015));border-left:2px solid rgba(56,189,248,.22);">
+              <div class="flex items-start gap-3">
+                <svg class="icon w-5 h-5 shrink-0 mt-0.5" style="color:#38bdf8;">
+                  <use href="#i-check" />
+                </svg>
+                <span class="text-sm leading-relaxed"><strong>Digitale Checkliste</strong> — Alles auf dem Handy,
+                  offline verfügbar</span>
+              </div>
+            </div>
+          </div>
 
-            <div class="grid grid-cols-2" style="border-top:1px solid rgba(56,189,248,.08);">
-              <div class="px-8 py-5" style="background:rgba(56,189,248,.02);">
-                <div class="flex items-start gap-3">
-                  <svg width="15" height="15" viewBox="0 0 16 16" class="shrink-0 mt-0.5" style="color:#cc6644;"><line x1="3" y1="3" x2="13" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><line x1="13" y1="3" x2="3" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-                  <span class="text-sm leading-relaxed" style="color:#999;text-decoration:line-through;text-decoration-color:rgba(56,189,248,.3);">Mangel melden heißt: Chef anrufen und erklären</span>
-                </div>
-              </div>
-              <div class="px-8 py-5" style="background:linear-gradient(135deg,rgba(56,189,248,.055),rgba(56,189,248,.015));border-left:2px solid rgba(56,189,248,.22);">
-                <div class="flex items-start gap-3">
-                  <svg class="icon w-5 h-5 shrink-0 mt-0.5" style="color:#38bdf8;"><use href="#i-check"/></svg>
-                  <span class="text-sm leading-relaxed"><strong>Voice-Erfassung</strong> — Einsprechen reicht, KI macht den Rest</span>
-                </div>
+          <div class="grid grid-cols-2" style="border-top:1px solid rgba(56,189,248,.08);">
+            <div class="px-8 py-5" style="background:rgba(56,189,248,.02);">
+              <div class="flex items-start gap-3">
+                <svg width="15" height="15" viewBox="0 0 16 16" class="shrink-0 mt-0.5" style="color:#cc6644;">
+                  <line x1="3" y1="3" x2="13" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+                  <line x1="13" y1="3" x2="3" y2="13" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" />
+                </svg>
+                <span class="text-sm leading-relaxed"
+                  style="color:#999;text-decoration:line-through;text-decoration-color:rgba(56,189,248,.3);">Mangel
+                  melden heißt: Chef anrufen und erklären</span>
               </div>
             </div>
+            <div class="px-8 py-5"
+              style="background:linear-gradient(135deg,rgba(56,189,248,.055),rgba(56,189,248,.015));border-left:2px solid rgba(56,189,248,.22);">
+              <div class="flex items-start gap-3">
+                <svg class="icon w-5 h-5 shrink-0 mt-0.5" style="color:#38bdf8;">
+                  <use href="#i-check" />
+                </svg>
+                <span class="text-sm leading-relaxed"><strong>Voice-Erfassung</strong> — Einsprechen reicht, KI macht
+                  den Rest</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -453,177 +725,378 @@
 
   <section class="py-24 md:py-36 text-center section-alt section-glow" id="funktionen">
     <div class="max-w-[1100px] mx-auto px-5 md:px-10">
-      <span class="reveal inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded mb-4" style="color:#F97316;background:rgba(249,115,22,.06);">Funktionen</span>
-      <h2 class="reveal text-3xl md:text-5xl font-bold leading-[1.1] tracking-tight mb-5">Alles, was die Baustelle<br>braucht</h2>
-      <p class="reveal text-lg max-w-[620px] mx-auto leading-relaxed" style="color:var(--color-muted);">Acht Funktionsbereiche. Alles in einer App.</p>
+      <span class="reveal inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded mb-4"
+        style="color:#F97316;background:rgba(249,115,22,.06);">Funktionen</span>
+      <h2 class="reveal text-3xl md:text-5xl font-bold leading-[1.1] tracking-tight mb-5">Alles, was die
+        Baustelle<br>braucht</h2>
+      <p class="reveal text-lg max-w-[620px] mx-auto leading-relaxed" style="color:var(--color-muted);">Acht
+        Funktionsbereiche. Alles in einer App.</p>
       <div class="mt-14 grid grid-cols-1 md:grid-cols-2 gap-5">
 
-          <div class="reveal p-7 rounded-2xl bg-surface border border-border text-left card-hover accent-hover" style="position:relative;overflow:hidden;">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.18);color:#F97316;">
-                <svg class="icon w-6 h-6"><use href="#i-mic"/></svg>
-              </div>
-              <div><h3 class="font-semibold text-lg mb-1">Spracheingabe</h3><p class="text-sm leading-relaxed" style="color:var(--color-muted);">Mangel einsprechen in jeder Sprache. Groq Whisper Large v3 Turbo transkribiert in Sekunden. Kein Tippen nötig.</p></div>
+        <div class="reveal p-7 rounded-2xl bg-surface border border-border text-left card-hover accent-hover"
+          style="position:relative;overflow:hidden;">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+              style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.18);color:#F97316;">
+              <svg class="icon w-6 h-6">
+                <use href="#i-mic" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg mb-1">Spracheingabe</h3>
+              <p class="text-sm leading-relaxed" style="color:var(--color-muted);">Mangel einsprechen in jeder Sprache.
+                Groq Whisper Large v3 Turbo transkribiert in Sekunden. Kein Tippen nötig.</p>
             </div>
           </div>
+        </div>
 
-          <div class="reveal p-7 rounded-2xl bg-surface border border-border text-left card-hover accent-hover" style="position:relative;overflow:hidden;">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.18);color:#F97316;">
-                <svg class="icon w-6 h-6"><use href="#i-camera"/></svg>
-              </div>
-              <div><h3 class="font-semibold text-lg mb-1">Foto & Video</h3><p class="text-sm leading-relaxed" style="color:var(--color-muted);">Native Kamerasteuerung, clientseitige Bildkomprimierung, bis zu 50 MB Video pro Mangel. Visueller Beweis.</p></div>
+        <div class="reveal p-7 rounded-2xl bg-surface border border-border text-left card-hover accent-hover"
+          style="position:relative;overflow:hidden;">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+              style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.18);color:#F97316;">
+              <svg class="icon w-6 h-6">
+                <use href="#i-camera" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg mb-1">Foto & Video</h3>
+              <p class="text-sm leading-relaxed" style="color:var(--color-muted);">Native Kamerasteuerung, clientseitige
+                Bildkomprimierung, bis zu 50 MB Video pro Mangel. Visueller Beweis.</p>
             </div>
           </div>
+        </div>
 
-          <div class="reveal p-7 rounded-2xl bg-surface border border-border text-left card-hover accent-hover" style="position:relative;overflow:hidden;">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.18);color:#F97316;">
-                <svg class="icon w-6 h-6"><use href="#i-globe"/></svg>
-              </div>
-              <div><h3 class="font-semibold text-lg mb-1">Mehrsprachig</h3><p class="text-sm leading-relaxed" style="color:var(--color-muted);">Automatische Übersetzung via DeepL API: Deutsch, Türkisch, Russisch. Jede Eingabe wird sofort übersetzt.</p></div>
+        <div class="reveal p-7 rounded-2xl bg-surface border border-border text-left card-hover accent-hover"
+          style="position:relative;overflow:hidden;">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+              style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.18);color:#F97316;">
+              <svg class="icon w-6 h-6">
+                <use href="#i-globe" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg mb-1">Mehrsprachig</h3>
+              <p class="text-sm leading-relaxed" style="color:var(--color-muted);">Automatische Übersetzung via DeepL
+                API: Deutsch, Türkisch, Russisch. Jede Eingabe wird sofort übersetzt.</p>
             </div>
           </div>
+        </div>
 
-          <div class="reveal p-7 rounded-2xl bg-surface border border-border text-left card-hover accent-hover" style="position:relative;overflow:hidden;">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.18);color:#F97316;">
-                <svg class="icon w-6 h-6"><use href="#i-wifi"/></svg>
-              </div>
-              <div><h3 class="font-semibold text-lg mb-1">Echtzeit-Sync</h3><p class="text-sm leading-relaxed" style="color:var(--color-muted);">Alle Änderungen synchen live über Supabase Realtime. Kein manueller Abgleich, kein Reload nötig.</p></div>
+        <div class="reveal p-7 rounded-2xl bg-surface border border-border text-left card-hover accent-hover"
+          style="position:relative;overflow:hidden;">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+              style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.18);color:#F97316;">
+              <svg class="icon w-6 h-6">
+                <use href="#i-wifi" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg mb-1">Echtzeit-Sync</h3>
+              <p class="text-sm leading-relaxed" style="color:var(--color-muted);">Alle Änderungen synchen live über
+                Supabase Realtime. Kein manueller Abgleich, kein Reload nötig.</p>
             </div>
           </div>
+        </div>
 
-          <div class="reveal p-7 rounded-2xl bg-surface border border-border text-left card-hover accent-hover" style="position:relative;overflow:hidden;">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.18);color:#F97316;">
-                <svg class="icon w-6 h-6"><use href="#i-zap"/></svg>
-              </div>
-              <div><h3 class="font-semibold text-lg mb-1">One-Tap Status</h3><p class="text-sm leading-relaxed" style="color:var(--color-muted);">Zwischen Offen, In Bearbeitung und Erledigt wechseln — ein Fingertipp. Automatisch gespeichert.</p></div>
+        <div class="reveal p-7 rounded-2xl bg-surface border border-border text-left card-hover accent-hover"
+          style="position:relative;overflow:hidden;">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+              style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.18);color:#F97316;">
+              <svg class="icon w-6 h-6">
+                <use href="#i-zap" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg mb-1">One-Tap Status</h3>
+              <p class="text-sm leading-relaxed" style="color:var(--color-muted);">Zwischen Offen, In Bearbeitung und
+                Erledigt wechseln — ein Fingertipp. Automatisch gespeichert.</p>
             </div>
           </div>
+        </div>
 
-          <div class="reveal p-7 rounded-2xl bg-surface border border-border text-left card-hover accent-hover" style="position:relative;overflow:hidden;">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.18);color:#F97316;">
-                <svg class="icon w-6 h-6"><use href="#i-users"/></svg>
-              </div>
-              <div><h3 class="font-semibold text-lg mb-1">Rollenbasiert</h3><p class="text-sm leading-relaxed" style="color:var(--color-muted);">Admin, Bauleiter (Manager), Handwerker (Worker). Jeder sieht genau das, was er braucht.</p></div>
+        <div class="reveal p-7 rounded-2xl bg-surface border border-border text-left card-hover accent-hover"
+          style="position:relative;overflow:hidden;">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+              style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.18);color:#F97316;">
+              <svg class="icon w-6 h-6">
+                <use href="#i-users" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg mb-1">Rollenbasiert</h3>
+              <p class="text-sm leading-relaxed" style="color:var(--color-muted);">Admin, Bauleiter (Manager),
+                Handwerker (Worker). Jeder sieht genau das, was er braucht.</p>
             </div>
           </div>
+        </div>
 
-          <div class="reveal p-7 rounded-2xl bg-surface border border-border text-left card-hover accent-hover" style="position:relative;overflow:hidden;">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.18);color:#F97316;">
-                <svg class="icon w-6 h-6"><use href="#i-cloud"/></svg>
-              </div>
-              <div><h3 class="font-semibold text-lg mb-1">PWA & Offline</h3><p class="text-sm leading-relaxed" style="color:var(--color-muted);">Progressive Web App mit gecachter App Shell. Funktioniert auch ohne Netzverbindung auf der Baustelle.</p></div>
+        <div class="reveal p-7 rounded-2xl bg-surface border border-border text-left card-hover accent-hover"
+          style="position:relative;overflow:hidden;">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+              style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.18);color:#F97316;">
+              <svg class="icon w-6 h-6">
+                <use href="#i-cloud" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg mb-1">PWA & Offline</h3>
+              <p class="text-sm leading-relaxed" style="color:var(--color-muted);">Progressive Web App mit gecachter App
+                Shell. Funktioniert auch ohne Netzverbindung auf der Baustelle.</p>
             </div>
           </div>
+        </div>
 
-          <div class="reveal p-7 rounded-2xl bg-surface border border-border text-left card-hover accent-hover" style="position:relative;overflow:hidden;">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.18);color:#F97316;">
-                <svg class="icon w-6 h-6"><use href="#i-message"/></svg>
-              </div>
-              <div><h3 class="font-semibold text-lg mb-1">Kommentare</h3><p class="text-sm leading-relaxed" style="color:var(--color-muted);">Fragen und Anweisungen pro Mangel. Alle können lesen und schreiben. Löschen nur für Ersteller oder Admin/Manager.</p></div>
+        <div class="reveal p-7 rounded-2xl bg-surface border border-border text-left card-hover accent-hover"
+          style="position:relative;overflow:hidden;">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
+              style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.18);color:#F97316;">
+              <svg class="icon w-6 h-6">
+                <use href="#i-message" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-lg mb-1">Kommentare</h3>
+              <p class="text-sm leading-relaxed" style="color:var(--color-muted);">Fragen und Anweisungen pro Mangel.
+                Alle können lesen und schreiben. Löschen nur für Ersteller oder Admin/Manager.</p>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <div class="divider-gradient" style="background:linear-gradient(to bottom, var(--color-bg-alt), var(--color-bg));"></div>
+  <div class="divider-gradient" style="background:linear-gradient(to bottom, var(--color-bg-alt), var(--color-bg));">
+  </div>
   <section class="py-20" id="technik">
     <div class="max-w-[1100px] mx-auto px-5 md:px-10 text-center mb-10">
-      <span class="reveal inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded mb-4" style="color:#F97316;background:rgba(249,115,22,.06);">Tech Stack</span>
+      <span class="reveal inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded mb-4"
+        style="color:#F97316;background:rgba(249,115,22,.06);">Tech Stack</span>
       <h2 class="reveal text-2xl md:text-4xl font-bold tracking-tight">Gebaut mit modernen Technologien</h2>
     </div>
     <div class="marquee">
-      <div class="marquee__track"><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">Next.js 15</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">React 19</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">Supabase</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">Tailwind CSS</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">Drizzle ORM</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">Groq Whisper</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">DeepL API</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">Framer Motion</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">TypeScript</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">PWA</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">Next.js 15</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">React 19</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">Supabase</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">Tailwind CSS</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">Drizzle ORM</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">Groq Whisper</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">DeepL API</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">Framer Motion</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">TypeScript</div><div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap" style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">PWA</div></div>
+      <div class="marquee__track">
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          Next.js 15</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          React 19</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          Supabase</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          Tailwind CSS</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          Drizzle ORM</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          Groq Whisper</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          DeepL API</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          Framer Motion</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          TypeScript</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          PWA</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          Next.js 15</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          React 19</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          Supabase</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          Tailwind CSS</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          Drizzle ORM</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          Groq Whisper</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          DeepL API</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          Framer Motion</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          TypeScript</div>
+        <div class="px-5 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
+          style="background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);color:var(--color-text-main);">
+          PWA</div>
+      </div>
     </div>
   </section>
 
   <section class="py-24 md:py-32" id="faq">
     <div class="max-w-[720px] mx-auto px-5 md:px-10">
       <div class="text-center mb-14">
-        <span class="reveal inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-5" style="color:#F97316;background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);">FAQ</span>
+        <span class="reveal inline-block text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full mb-5"
+          style="color:#F97316;background:rgba(249,115,22,.06);border:1px solid rgba(249,115,22,.14);">FAQ</span>
         <h2 class="reveal text-3xl md:text-5xl font-bold tracking-tight mb-5">Häufige Fragen</h2>
       </div>
       <div id="faqList">
-      <div class="faq-item">
-        <button class="faq-question flex items-center gap-4 w-full text-left py-5 px-2 cursor-pointer bg-transparent border-0" style="font-family:inherit;">
-          <span style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:#F97316;opacity:.8;min-width:26px;padding-top:3px;flex-shrink:0;">01</span>
-          <span class="flex-1 font-semibold text-base">Für welche Bauarten ist Ustafix geeignet?</span>
-          <span class="faq-question__icon relative w-5 h-5 shrink-0"></span>
-        </button>
-        <div class="faq-answer"><div class="pb-5 px-2 pl-12 text-sm leading-relaxed" style="color:var(--color-muted);">Ustafix eignet sich für alle Bauarten — Hochbau, Tiefbau, Sanierung, Neubau, Infrastrukturprojekte. Die App passt sich an jede Projektgröße an, vom Einfamilienhaus bis zum Großprojekt.</div></div>
+        <div class="faq-item">
+          <button
+            class="faq-question flex items-center gap-4 w-full text-left py-5 px-2 cursor-pointer bg-transparent border-0"
+            style="font-family:inherit;">
+            <span
+              style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:#F97316;opacity:.8;min-width:26px;padding-top:3px;flex-shrink:0;">01</span>
+            <span class="flex-1 font-semibold text-base">Für welche Bauarten ist Ustafix geeignet?</span>
+            <span class="faq-question__icon relative w-5 h-5 shrink-0"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pb-5 px-2 pl-12 text-sm leading-relaxed" style="color:var(--color-muted);">Ustafix eignet sich
+              für alle Bauarten — Hochbau, Tiefbau, Sanierung, Neubau, Infrastrukturprojekte. Die App passt sich an jede
+              Projektgröße an, vom Einfamilienhaus bis zum Großprojekt.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button
+            class="faq-question flex items-center gap-4 w-full text-left py-5 px-2 cursor-pointer bg-transparent border-0"
+            style="font-family:inherit;">
+            <span
+              style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:#F97316;opacity:.8;min-width:26px;padding-top:3px;flex-shrink:0;">02</span>
+            <span class="flex-1 font-semibold text-base">Wie funktioniert die Spracheingabe?</span>
+            <span class="faq-question__icon relative w-5 h-5 shrink-0"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pb-5 px-2 pl-12 text-sm leading-relaxed" style="color:var(--color-muted);">Mangel einsprechen —
+              in jeder Sprache. Groq Whisper Large v3 Turbo transkribiert in Sekunden mit über 98 % Genauigkeit. DeepL
+              übersetzt automatisch in Deutsch, Türkisch und Russisch. Ideal für die 33,7 % ausländischen Fachkräfte im
+              Hoch-/Tiefbau.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button
+            class="faq-question flex items-center gap-4 w-full text-left py-5 px-2 cursor-pointer bg-transparent border-0"
+            style="font-family:inherit;">
+            <span
+              style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:#F97316;opacity:.8;min-width:26px;padding-top:3px;flex-shrink:0;">03</span>
+            <span class="flex-1 font-semibold text-base">Funktioniert Ustafix auch offline?</span>
+            <span class="faq-question__icon relative w-5 h-5 shrink-0"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pb-5 px-2 pl-12 text-sm leading-relaxed" style="color:var(--color-muted);">Ja. Ustafix ist eine
+              Progressive Web App (PWA) mit gecachter App Shell. Ideal für Gebäudekerne, Tiefgaragen und Rohbauten ohne
+              Netzabdeckung. Daten syncen automatisch bei Verbindung.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button
+            class="faq-question flex items-center gap-4 w-full text-left py-5 px-2 cursor-pointer bg-transparent border-0"
+            style="font-family:inherit;">
+            <span
+              style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:#F97316;opacity:.8;min-width:26px;padding-top:3px;flex-shrink:0;">04</span>
+            <span class="flex-1 font-semibold text-base">Was unterscheidet Ustafix von PlanRadar, Capmo oder
+              BauMaster?</span>
+            <span class="faq-question__icon relative w-5 h-5 shrink-0"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pb-5 px-2 pl-12 text-sm leading-relaxed" style="color:var(--color-muted);">Ustafix ist die
+              einzige App, die Voice-first-Erfassung mit automatischer Echtzeit-Übersetzung (DE/TR/RU) kombiniert. Keine
+              andere Mängelmanagement-Software löst das Sprachbarrieren-Problem so direkt.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button
+            class="faq-question flex items-center gap-4 w-full text-left py-5 px-2 cursor-pointer bg-transparent border-0"
+            style="font-family:inherit;">
+            <span
+              style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:#F97316;opacity:.8;min-width:26px;padding-top:3px;flex-shrink:0;">05</span>
+            <span class="flex-1 font-semibold text-base">Ist Ustafix DSGVO-konform?</span>
+            <span class="faq-question__icon relative w-5 h-5 shrink-0"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pb-5 px-2 pl-12 text-sm leading-relaxed" style="color:var(--color-muted);">Ja. Alle Daten werden
+              in EU-Rechenzentren von Supabase gespeichert. Fotos, Videos, Audio, Kommentare — alles DSGVO-konform
+              verarbeitet. Keine Weitergabe an Dritte.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button
+            class="faq-question flex items-center gap-4 w-full text-left py-5 px-2 cursor-pointer bg-transparent border-0"
+            style="font-family:inherit;">
+            <span
+              style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:#F97316;opacity:.8;min-width:26px;padding-top:3px;flex-shrink:0;">06</span>
+            <span class="flex-1 font-semibold text-base">Wie viel kostet Ustafix?</span>
+            <span class="faq-question__icon relative w-5 h-5 shrink-0"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pb-5 px-2 pl-12 text-sm leading-relaxed" style="color:var(--color-muted);">Kontaktieren Sie uns
+              für ein individuelles Angebot. Der Preis richtet sich nach Anzahl der Projekte und Nutzer. Kostenlose Demo
+              verfügbar.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button
+            class="faq-question flex items-center gap-4 w-full text-left py-5 px-2 cursor-pointer bg-transparent border-0"
+            style="font-family:inherit;">
+            <span
+              style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:#F97316;opacity:.8;min-width:26px;padding-top:3px;flex-shrink:0;">07</span>
+            <span class="flex-1 font-semibold text-base">Warum DE, TR und RU als Sprachen?</span>
+            <span class="faq-question__icon relative w-5 h-5 shrink-0"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pb-5 px-2 pl-12 text-sm leading-relaxed" style="color:var(--color-muted);">Laut Hauptverband der
+              Deutschen Bauindustrie kommen die meisten ausländischen Baufachkräfte aus der Türkei, Rumänien, Polen und
+              dem Kosovo. Türkisch und Russisch decken die größten Sprachgruppen ab, die auf deutschen Baustellen
+              vertreten sind.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button
+            class="faq-question flex items-center gap-4 w-full text-left py-5 px-2 cursor-pointer bg-transparent border-0"
+            style="font-family:inherit;">
+            <span
+              style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:#F97316;opacity:.8;min-width:26px;padding-top:3px;flex-shrink:0;">08</span>
+            <span class="flex-1 font-semibold text-base">Wie hilft Ustafix bei der Arbeitssicherheit?</span>
+            <span class="faq-question__icon relative w-5 h-5 shrink-0"></span>
+          </button>
+          <div class="faq-answer">
+            <div class="pb-5 px-2 pl-12 text-sm leading-relaxed" style="color:var(--color-muted);">Sprachbarrieren sind
+              laut DGUV ein Risikofaktor für Arbeitsunfälle. 2022 gab es 74 Todesfälle und fast 100.000 Verletzte auf
+              deutschen Baustellen. Ustafix übersetzt Mängelmeldungen und Anweisungen automatisch — so versteht jeder,
+              was zu tun ist.</div>
+          </div>
+        </div>
       </div>
-      <div class="faq-item">
-        <button class="faq-question flex items-center gap-4 w-full text-left py-5 px-2 cursor-pointer bg-transparent border-0" style="font-family:inherit;">
-          <span style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:#F97316;opacity:.8;min-width:26px;padding-top:3px;flex-shrink:0;">02</span>
-          <span class="flex-1 font-semibold text-base">Wie funktioniert die Spracheingabe?</span>
-          <span class="faq-question__icon relative w-5 h-5 shrink-0"></span>
-        </button>
-        <div class="faq-answer"><div class="pb-5 px-2 pl-12 text-sm leading-relaxed" style="color:var(--color-muted);">Mangel einsprechen — in jeder Sprache. Groq Whisper Large v3 Turbo transkribiert in Sekunden mit über 98 % Genauigkeit. DeepL übersetzt automatisch in Deutsch, Türkisch und Russisch. Ideal für die 33,7 % ausländischen Fachkräfte im Hoch-/Tiefbau.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question flex items-center gap-4 w-full text-left py-5 px-2 cursor-pointer bg-transparent border-0" style="font-family:inherit;">
-          <span style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:#F97316;opacity:.8;min-width:26px;padding-top:3px;flex-shrink:0;">03</span>
-          <span class="flex-1 font-semibold text-base">Funktioniert Ustafix auch offline?</span>
-          <span class="faq-question__icon relative w-5 h-5 shrink-0"></span>
-        </button>
-        <div class="faq-answer"><div class="pb-5 px-2 pl-12 text-sm leading-relaxed" style="color:var(--color-muted);">Ja. Ustafix ist eine Progressive Web App (PWA) mit gecachter App Shell. Ideal für Gebäudekerne, Tiefgaragen und Rohbauten ohne Netzabdeckung. Daten syncen automatisch bei Verbindung.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question flex items-center gap-4 w-full text-left py-5 px-2 cursor-pointer bg-transparent border-0" style="font-family:inherit;">
-          <span style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:#F97316;opacity:.8;min-width:26px;padding-top:3px;flex-shrink:0;">04</span>
-          <span class="flex-1 font-semibold text-base">Was unterscheidet Ustafix von PlanRadar, Capmo oder BauMaster?</span>
-          <span class="faq-question__icon relative w-5 h-5 shrink-0"></span>
-        </button>
-        <div class="faq-answer"><div class="pb-5 px-2 pl-12 text-sm leading-relaxed" style="color:var(--color-muted);">Ustafix ist die einzige App, die Voice-first-Erfassung mit automatischer Echtzeit-Übersetzung (DE/TR/RU) kombiniert. Keine andere Mängelmanagement-Software löst das Sprachbarrieren-Problem so direkt.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question flex items-center gap-4 w-full text-left py-5 px-2 cursor-pointer bg-transparent border-0" style="font-family:inherit;">
-          <span style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:#F97316;opacity:.8;min-width:26px;padding-top:3px;flex-shrink:0;">05</span>
-          <span class="flex-1 font-semibold text-base">Ist Ustafix DSGVO-konform?</span>
-          <span class="faq-question__icon relative w-5 h-5 shrink-0"></span>
-        </button>
-        <div class="faq-answer"><div class="pb-5 px-2 pl-12 text-sm leading-relaxed" style="color:var(--color-muted);">Ja. Alle Daten werden in EU-Rechenzentren von Supabase gespeichert. Fotos, Videos, Audio, Kommentare — alles DSGVO-konform verarbeitet. Keine Weitergabe an Dritte.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question flex items-center gap-4 w-full text-left py-5 px-2 cursor-pointer bg-transparent border-0" style="font-family:inherit;">
-          <span style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:#F97316;opacity:.8;min-width:26px;padding-top:3px;flex-shrink:0;">06</span>
-          <span class="flex-1 font-semibold text-base">Wie viel kostet Ustafix?</span>
-          <span class="faq-question__icon relative w-5 h-5 shrink-0"></span>
-        </button>
-        <div class="faq-answer"><div class="pb-5 px-2 pl-12 text-sm leading-relaxed" style="color:var(--color-muted);">Kontaktieren Sie uns für ein individuelles Angebot. Der Preis richtet sich nach Anzahl der Projekte und Nutzer. Kostenlose Demo verfügbar.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question flex items-center gap-4 w-full text-left py-5 px-2 cursor-pointer bg-transparent border-0" style="font-family:inherit;">
-          <span style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:#F97316;opacity:.8;min-width:26px;padding-top:3px;flex-shrink:0;">07</span>
-          <span class="flex-1 font-semibold text-base">Warum DE, TR und RU als Sprachen?</span>
-          <span class="faq-question__icon relative w-5 h-5 shrink-0"></span>
-        </button>
-        <div class="faq-answer"><div class="pb-5 px-2 pl-12 text-sm leading-relaxed" style="color:var(--color-muted);">Laut Hauptverband der Deutschen Bauindustrie kommen die meisten ausländischen Baufachkräfte aus der Türkei, Rumänien, Polen und dem Kosovo. Türkisch und Russisch decken die größten Sprachgruppen ab, die auf deutschen Baustellen vertreten sind.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question flex items-center gap-4 w-full text-left py-5 px-2 cursor-pointer bg-transparent border-0" style="font-family:inherit;">
-          <span style="font-size:.7rem;font-weight:700;letter-spacing:.09em;color:#F97316;opacity:.8;min-width:26px;padding-top:3px;flex-shrink:0;">08</span>
-          <span class="flex-1 font-semibold text-base">Wie hilft Ustafix bei der Arbeitssicherheit?</span>
-          <span class="faq-question__icon relative w-5 h-5 shrink-0"></span>
-        </button>
-        <div class="faq-answer"><div class="pb-5 px-2 pl-12 text-sm leading-relaxed" style="color:var(--color-muted);">Sprachbarrieren sind laut DGUV ein Risikofaktor für Arbeitsunfälle. 2022 gab es 74 Todesfälle und fast 100.000 Verletzte auf deutschen Baustellen. Ustafix übersetzt Mängelmeldungen und Anweisungen automatisch — so versteht jeder, was zu tun ist.</div></div>
-      </div></div>
     </div>
   </section>
 
   <section class="section-dark py-24 md:py-32" style="background:#050508;">
     <div class="max-w-[700px] mx-auto px-5 md:px-10 text-center">
-      <h2 class="reveal text-3xl md:text-5xl font-black leading-[1.05] tracking-tight mb-6" style="color:#f0f0f2;">Bereit für die<br><span style="color:#F97316;">digitale Baustelle?</span></h2>
-      <p class="reveal text-lg leading-relaxed mb-10" style="color:#9a9aaa;">Lassen Sie uns in einem kurzen Gespräch klären, wie Ustafix Ihre Mängeldokumentation vereinfacht.</p>
+      <h2 class="reveal text-3xl md:text-5xl font-black leading-[1.05] tracking-tight mb-6" style="color:#f0f0f2;">
+        Bereit für die<br><span style="color:#F97316;">digitale Baustelle?</span></h2>
+      <p class="reveal text-lg leading-relaxed mb-10" style="color:#9a9aaa;">Lassen Sie uns in einem kurzen Gespräch
+        klären, wie Ustafix Ihre Mängeldokumentation vereinfacht.</p>
       <div class="reveal">
-        <a href="mailto:info@wamocon.com?subject=Interesse%20an%20Ustafix" style="display:inline-flex;align-items:center;gap:8px;padding:16px 36px;background:#F97316;color:#fff;font-size:1rem;font-weight:700;border-radius:14px;text-decoration:none;transition:all .25s ease;box-shadow:0 4px 24px rgba(249,115,22,.3);" onmouseover="this.style.background='#EA580C';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='#F97316';this.style.transform='translateY(0)'">Demo anfragen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:18px;height:18px;"><path d="M5 12h14"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a href="mailto:info@wamocon.com?subject=Interesse%20an%20Ustafix"
+          style="display:inline-flex;align-items:center;gap:8px;padding:16px 36px;background:#F97316;color:#fff;font-size:1rem;font-weight:700;border-radius:14px;text-decoration:none;transition:all .25s ease;box-shadow:0 4px 24px rgba(249,115,22,.3);"
+          onmouseover="this.style.background='#EA580C';this.style.transform='translateY(-2px)'"
+          onmouseout="this.style.background='#F97316';this.style.transform='translateY(0)'">Demo anfragen <svg
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:18px;height:18px;">
+            <path d="M5 12h14" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg></a>
       </div>
     </div>
   </section>
@@ -637,13 +1110,16 @@
   </footer>
 
   <button class="back-to-top" id="backToTop" aria-label="Nach oben">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:20px;height:20px;"><polyline points="18 15 12 9 6 15"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:20px;height:20px;">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
   </button>
 
   <div class="cookie-banner" id="cookieBanner">
     <div class="cookie-banner__inner">
       <div style="font-weight:700;font-size:.95rem;margin-bottom:6px;">🍪 Cookies</div>
-      <div style="font-size:.8rem;color:var(--color-muted);line-height:1.6;margin-bottom:16px;">Wir verwenden Cookies, um die Nutzung unserer Website zu analysieren.</div>
+      <div style="font-size:.8rem;color:var(--color-muted);line-height:1.6;margin-bottom:16px;">Wir verwenden Cookies,
+        um die Nutzung unserer Website zu analysieren.</div>
       <div style="display:flex;gap:10px;flex-wrap:wrap;">
         <button class="cookie-banner__btn cookie-banner__btn--accept" data-cookie-action="accept">Akzeptieren</button>
         <button class="cookie-banner__btn cookie-banner__btn--reject" data-cookie-action="reject">Ablehnen</button>
@@ -653,4 +1129,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
