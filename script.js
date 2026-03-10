@@ -338,6 +338,30 @@
         });
     }
 
+    /* ── 11. HERO VIDEO CONTROLS ── */
+    function initHeroVideo() {
+        var container = document.getElementById('heroVideoContainer');
+        var video = document.getElementById('heroVideo');
+        var playBtn = document.getElementById('heroPlayBtn');
+        var muteBtn = document.getElementById('heroMuteBtn');
+        if (!video || !container) return;
+
+        container.setAttribute('data-playing', 'true');
+        container.setAttribute('data-muted', 'true');
+
+        video.addEventListener('play', function () { container.setAttribute('data-playing', 'true'); });
+        video.addEventListener('pause', function () { container.setAttribute('data-playing', 'false'); });
+
+        playBtn.addEventListener('click', function () {
+            if (video.paused) { video.play(); } else { video.pause(); }
+        });
+
+        muteBtn.addEventListener('click', function () {
+            video.muted = !video.muted;
+            container.setAttribute('data-muted', video.muted ? 'true' : 'false');
+        });
+    }
+
     /* ── INIT ── */
     document.addEventListener('DOMContentLoaded', function () {
         initReveal();
@@ -350,5 +374,6 @@
         initMobileMenu();
         initBackToTop();
         initCookie();
+        initHeroVideo();
     });
 })();

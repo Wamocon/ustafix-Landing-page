@@ -204,7 +204,7 @@
     </div>
   </div>
 
-  <section class="relative min-h-screen flex items-center justify-center overflow-hidden pb-[120px]" id="hero">
+  <section class="relative flex items-center justify-center overflow-hidden pt-[160px] pb-[160px]" id="hero">
     <canvas id="heroParticles" class="absolute inset-0 z-[1]"></canvas>
     <div class="absolute inset-0 z-0"
       style="background:radial-gradient(ellipse 70% 55% at 50% 40%,rgba(249,115,22,.09)0%,transparent 65%),radial-gradient(ellipse 50% 60% at 20% 80%,rgba(249,115,22,.05)0%,transparent 50%),radial-gradient(ellipse 45% 50% at 80% 25%,rgba(200,80,0,.07)0%,transparent 50%)">
@@ -219,7 +219,24 @@
       <p class="reveal text-lg md:text-xl max-w-[640px] mx-auto leading-relaxed" style="color:var(--color-muted);">Yeni
         inşaat başına 31 kusur. %33 yabancı vasıflı işçi. Can alan dil engelleri. Ustafix, evrak işlerine son veriyor —
         ses girişi, otomatik çeviri ve gerçek zamanlı belgeleme ile.</p>
-      <div class="reveal mt-10">
+      <div class="reveal mt-10 hero-video-wrap">
+        <div class="hero-video-container" id="heroVideoContainer">
+          <video autoplay muted loop playsinline class="hero-video" id="heroVideo">
+            <source src="Ustafix-Turkish_(T%C3%BCrkiye)_with_captions.mp4" type="video/mp4">
+          </video>
+          <div class="hero-video-controls">
+            <button class="hero-video-btn" id="heroPlayBtn" aria-label="Oynat/Duraklat">
+              <svg class="hero-video-icon hero-video-icon--pause" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+              <svg class="hero-video-icon hero-video-icon--play" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg>
+            </button>
+            <button class="hero-video-btn" id="heroMuteBtn" aria-label="Ses aç/kapat">
+              <svg class="hero-video-icon hero-video-icon--muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+              <svg class="hero-video-icon hero-video-icon--unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor"/><path d="M19.07 4.93a10 10 0 010 14.14"/><path d="M15.54 8.46a5 5 0 010 7.07"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="reveal mt-8">
         <a href="mailto:info@wamocon.com?subject=Interesse%20an%20Ustafix"
           style="display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:#F97316;color:#fff;font-size:.95rem;font-weight:700;border-radius:12px;text-decoration:none;transition:all .25s ease;box-shadow:0 4px 24px rgba(249,115,22,.3);"
           onmouseover="this.style.background='#EA580C';this.style.transform='translateY(-2px)'"
