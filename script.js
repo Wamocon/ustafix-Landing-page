@@ -344,17 +344,33 @@
         var video = document.getElementById('heroVideo');
         var playBtn = document.getElementById('heroPlayBtn');
         var muteBtn = document.getElementById('heroMuteBtn');
+        var replayOverlay = document.getElementById('heroReplayOverlay');
+        var replayBtn = document.getElementById('heroReplayBtn');
         if (!video || !container) return;
 
         container.setAttribute('data-playing', 'true');
         container.setAttribute('data-muted', 'true');
 
-        video.addEventListener('play', function () { container.setAttribute('data-playing', 'true'); });
+        video.addEventListener('play', function () {
+            container.setAttribute('data-playing', 'true');
+            if (replayOverlay) { replayOverlay.classList.remove('hero-replay-overlay--visible'); replayOverlay.setAttribute('aria-hidden', 'true'); }
+        });
         video.addEventListener('pause', function () { container.setAttribute('data-playing', 'false'); });
+        video.addEventListener('ended', function () {
+            if (replayOverlay) { replayOverlay.classList.add('hero-replay-overlay--visible'); replayOverlay.setAttribute('aria-hidden', 'false'); }
+        });
 
         playBtn.addEventListener('click', function () {
             if (video.paused) { video.play(); } else { video.pause(); }
         });
+
+        if (replayBtn) {
+            replayBtn.addEventListener('click', function () {
+                video.currentTime = 0;
+                video.play();
+                if (replayOverlay) { replayOverlay.classList.remove('hero-replay-overlay--visible'); replayOverlay.setAttribute('aria-hidden', 'true'); }
+            });
+        }
 
         muteBtn.addEventListener('click', function () {
             video.muted = !video.muted;
